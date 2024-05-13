@@ -75,7 +75,7 @@ def ler_tabela_do_postgres():
     end) as status_da_viagem,
     tabela2.updated_at as ultima_atualizacao
 from
-    tickets_all as base
+    tickets_all as tabela_main
 inner join paypal_hooks as tabela2 on tabela_main.ord_id = tabela2.order_id
 """
 
